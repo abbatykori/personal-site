@@ -1,0 +1,6 @@
+# Intellij specific
+.idea/
+*.iml
+*~
+*.pyc
+.gitignore~
