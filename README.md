@@ -1,12 +1,11 @@
-![alt tag](https://raw.github.com/dogfalo/materialize/master/images/materialize.gif)
+![alt tag](https://abbatykori.com/abbatykori-logo-01.svg)
 ===========
 
 # A [Personal Website](https://abbatykori.com/) redesign
+#### Current Version : v4.0
 
-### Current Version : v4.0
-
-## Features
-- Sass
-
-## Supported/Tested Browsers:
-Chrome 35+, Firefox 31+, Safari 7+, IE 10+
+## I (try to) Use
+- [Sass](http://sass-lang.com/)
+- [AnimatePlus](https://github.com/bendc/AnimatePlus)
+- [Webpack](https://webpack.github.io/)
+- [Gradients.io](http://gradients.io/)
