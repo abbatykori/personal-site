@@ -4,4 +4,6 @@
 *~
 *.pyc
 node_modules/
+build/
+dist/
 .gitignore~
