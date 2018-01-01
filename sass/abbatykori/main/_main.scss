@@ -1,0 +1,96 @@
+main{    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: calc(100vh - 96px);
+    &:after{
+        content: ' ';
+        clear: both;
+        display: block;
+    }
+}
+.bio{
+    padding: 20px;
+    color: $ak-grey;
+    text-align: center;
+    img.profile{
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        margin: 50px auto;
+        display: block;
+        border-radius: 50%;
+        border: 1px solid $ak-green;
+    }
+    h1{
+        font-size: 40px;
+        font-weight: 400;
+        margin: 20px;
+        span{
+            font-weight: 700;
+        }
+    }
+    p{
+        max-width: 58rem;
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+        font-size: 16px;
+        &:after{
+            margin-bottom: 42px;
+        }
+    }
+}
+
+.projects{
+    margin-top: 30px;
+
+    $projects: 1, 2, 3, 4, 5, 6;
+    
+    
+      .project{
+        position: relative;
+    
+        @for $b from 1 through length($projects) {
+          &:nth-child(#{$b}n) {
+            transition: opacity calc(#{$b}s*.4), ease-in-out border .2s;
+            // animation-delay: calc(#{$b}s/4);
+          }
+        }
+      }
+    
+
+    .project{        
+        margin: 25px;
+        display: block;
+        border: 1px solid $ak-ash;
+        text-decoration: none;
+        padding: 2rem;
+        margin: 6px auto;
+        width: 85vw;
+        display: inline-block;
+        color: #47535b;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: .8rem;
+        letter-spacing: 2px;
+        cursor: pointer;
+        img{
+            max-width: 100%;
+            height: 140px;
+            display: block;
+            margin: 20px auto;
+        }
+        &:hover{
+            border-color: $ak-green;
+        }
+    }
+    @media screen and (min-width: 960px){
+        .project{
+            margin: 3px 0 3px 6px;
+            width: 25vw;
+            margin: 25px;
+            display: inline-block;
+        }
+    }
+}

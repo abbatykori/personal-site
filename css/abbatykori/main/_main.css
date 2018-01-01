@@ -1,0 +1,12 @@
+.bio {
+  padding: 120px 20px; }
+  .bio img {
+    width: 180px;
+    height: 180px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+    border-radius: 50%; }
+
+
